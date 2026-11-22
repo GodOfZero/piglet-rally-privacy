@@ -1,69 +1,215 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oink Engine Games</title>
-<meta name="description" content="Oink Engine Games is the indie studio behind the mobile game Piglet Rally.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Oink Engine Games is an independent studio from Ukraine making cheerful mobile games. Our first game: Piglet Rally.">
+<meta name="theme-color" content="#17544A">
+<meta property="og:title" content="Oink Engine Games">
+<meta property="og:description" content="Cheerful mobile games about brave piglets. Meet Piglet Rally.">
+<meta property="og:image" content="https://oinkenginegames.com/assets/captain.webp">
+<link rel="icon" href="assets/herd.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
-<main>
-<nav><a href="#en">English</a><a href="#uk">Українська</a><a href="privacy/">Privacy Policy</a><a href="terms/">Terms of Service</a></nav>
 
-<section id="en">
-<h1>Oink Engine Games</h1>
-<p class="date">Independent game studio · Ichnia, Ukraine</p>
+<header class="top">
+  <a class="brand" href="#top"><img src="assets/herd.webp" alt="" width="44" height="44"><span>Oink Engine <b>Games</b></span></a>
+  <nav class="menu">
+    <a href="#game"><span class="en">Game</span><span class="uk">Гра</span></a>
+    <a href="#worlds"><span class="en">Worlds</span><span class="uk">Світи</span></a>
+    <a href="#team"><span class="en">Team</span><span class="uk">Команда</span></a>
+    <a href="#contact"><span class="en">Contact</span><span class="uk">Контакти</span></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-set="en">EN</button><button type="button" data-set="uk">UA</button>
+  </div>
+</header>
 
-<p>We are a small independent studio that makes cheerful, easy-to-pick-up mobile games.
-Our first game is <b>Piglet Rally</b> («Пятачки, вперёд!»): a brave herd of piglets races through farm raids,
-grows stronger and brings the loot home. It's out on Android and iOS.</p>
+<main id="top">
 
-<h2>What we care about</h2>
-<ul>
-  <li><b>Fun first.</b> Short, bright sessions that are easy to start and hard to put down.</li>
-  <li><b>Fair play.</b> Ads are optional and give rewards. You can always remove them.</li>
-  <li><b>Respect for players.</b> No accounts, and your progress stays on your device. See our <a href="privacy/">Privacy Policy</a>.</li>
-</ul>
-
-<h2>Team</h2>
-<div class="box">
-<p><b>Oleksandr Matiashov</b> — founder, game designer and developer.<br>
-Design, code, art direction, balancing and everything in between.</p>
-</div>
-
-<h2>Contact</h2>
-<p>Feedback, bug reports, partnerships or press:
-<a href="mailto:matiashovsasha@gmail.com">matiashovsasha@gmail.com</a></p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="en">Indie game studio · Ukraine</span><span class="uk">Інді-студія · Україна</span></p>
+      <h1>
+        <span class="en">Brave piglets.<br>Big adventures.</span>
+        <span class="uk">Відважні поросята.<br>Великі пригоди.</span>
+      </h1>
+      <p class="lead">
+        <span class="en">We make bright, cosy mobile games you can pick up in a second and smile at for hours.</span>
+        <span class="uk">Ми робимо яскраві затишні мобільні ігри: почати — за секунду, усміхатися — годинами.</span>
+      </p>
+      <div class="cta">
+        <a class="btn btn-gold" href="#game"><span class="en">Meet Piglet Rally</span><span class="uk">Знайомтесь: Piglet Rally</span></a>
+        <a class="btn btn-green" href="#contact"><span class="en">Say hello</span><span class="uk">Написати нам</span></a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="sun" aria-hidden="true"></div>
+      <img class="captain" src="assets/captain.webp" alt="Captain piglet in goggles jumping" width="640" height="640">
+      <img class="float corn c1" src="assets/corn.webp" alt="" aria-hidden="true">
+      <img class="float corn c2" src="assets/corn.webp" alt="" aria-hidden="true">
+      <img class="float chest" src="assets/chest.webp" alt="" aria-hidden="true">
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64 C240,128 480,0 720,48 C960,96 1200,16 1440,56 L1440,120 L0,120 Z"/></svg>
 </section>
 
-<hr>
+<!-- GAME -->
+<section id="game" class="game">
+  <div class="wrap">
+    <div class="ribbon"><span>Piglet Rally</span></div>
+    <p class="sub">«Пятачки, вперёд!» · <span class="en">Coming soon to Android &amp; iOS</span><span class="uk">Незабаром на Android та iOS</span></p>
 
-<section id="uk" lang="uk">
-<h1>Oink Engine Games</h1>
-<p class="date">Незалежна ігрова студія · м. Ічня, Україна</p>
-
-<p>Ми — невелика незалежна студія, що робить яскраві мобільні ігри, в які легко почати грати.
-Наша перша гра — <b>Piglet Rally</b> («Пятачки, вперёд!»): відважна зграйка поросят вирушає в рейди фермою,
-стає сильнішою та приносить здобич додому. Гра виходить на Android та iOS.</p>
-
-<h2>Що для нас важливо</h2>
-<ul>
-  <li><b>Насамперед — задоволення.</b> Короткі яскраві сесії: легко почати, важко відірватися.</li>
-  <li><b>Чесна гра.</b> Реклама необов’язкова і дає нагороди. Її завжди можна вимкнути.</li>
-  <li><b>Повага до гравців.</b> Жодних облікових записів, прогрес зберігається на вашому пристрої. Див. <a href="privacy/#uk">Політику конфіденційності</a>.</li>
-</ul>
-
-<h2>Команда</h2>
-<div class="box">
-<p><b>Олександр Матяшов</b> — засновник, геймдизайнер і розробник.<br>
-Дизайн, код, арт-дирекція, баланс і все, що між ними.</p>
-</div>
-
-<h2>Контакти</h2>
-<p>Відгуки, повідомлення про помилки, партнерство чи преса:
-<a href="mailto:matiashovsasha@gmail.com">matiashovsasha@gmail.com</a></p>
+    <div class="game-grid">
+      <div class="phones">
+        <figure class="phone p1"><img src="assets/screen_raid.webp" alt="Raid gameplay: piglets run through +2 and ×3 gates" loading="lazy" width="470" height="812"></figure>
+        <figure class="phone p2"><img src="assets/screen_farm.webp" alt="The home farm screen" loading="lazy" width="470" height="812"></figure>
+      </div>
+      <ul class="features">
+        <li>
+          <span class="gate">×3</span>
+          <div><h3><span class="en">Run the gates</span><span class="uk">Мчи крізь ворота</span></h3>
+          <p><span class="en">Pick the right gates to multiply your herd — and dodge the red ones.</span><span class="uk">Обирай правильні ворота, щоб примножити стадо, — і уникай червоних.</span></p></div>
+        </li>
+        <li>
+          <img src="assets/corn.webp" alt="" width="56" height="56" loading="lazy">
+          <div><h3><span class="en">Grow your farm</span><span class="uk">Розбудовуй ферму</span></h3>
+          <p><span class="en">Bring the corn home, upgrade buildings and recruit new heroes.</span><span class="uk">Неси кукурудзу додому, покращуй будівлі та набирай нових героїв.</span></p></div>
+        </li>
+        <li>
+          <img src="assets/chest.webp" alt="" width="56" height="56" loading="lazy">
+          <div><h3><span class="en">Open chests</span><span class="uk">Відкривай скрині</span></h3>
+          <p><span class="en">Every raid pays off with rewards, skins and surprises.</span><span class="uk">Кожен рейд приносить нагороди, скіни та сюрпризи.</span></p></div>
+        </li>
+        <li>
+          <img src="assets/trophy.webp" alt="" width="56" height="56" loading="lazy">
+          <div><h3><span class="en">Beat the boars</span><span class="uk">Переможи кабанів</span></h3>
+          <p><span class="en">Grumpy boar bosses guard every chapter. Stomp them flat!</span><span class="uk">Буркотливі боси-кабани охороняють кожну главу. Розтопчи їх!</span></p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
+
+<!-- CAST -->
+<section class="cast">
+  <div class="wrap">
+    <h2><span class="en">Heroes vs. grumps</span><span class="uk">Герої проти буркотунів</span></h2>
+    <div class="cast-grid">
+      <article class="card heroes">
+        <img src="assets/heroes.webp" alt="Three piglet heroes: a barrel-carrying piglet, the captain in goggles and a small runner" loading="lazy" width="900" height="421">
+        <h3><span class="en">The Squad</span><span class="uk">Загін</span></h3>
+        <p><span class="en">Round, brave and a little bit reckless. Each piglet has a job — carrying, leading or running really fast.</span><span class="uk">Круглі, сміливі й трохи безрозсудні. У кожного поросяти своя справа — носити, вести за собою чи дуже швидко бігати.</span></p>
+      </article>
+      <article class="card villain">
+        <div class="duo"><img src="assets/boar.webp" alt="A grumpy red boar" loading="lazy" width="320" height="320"><img src="assets/boss.webp" alt="Boar boss" loading="lazy" width="320" height="320"></div>
+        <h3><span class="en">The Boars</span><span class="uk">Кабани</span></h3>
+        <p><span class="en">Grumpy, tusky and very protective of their corn. Not scary — just in the way.</span><span class="uk">Буркотливі, ікласті й дуже бережуть свою кукурудзу. Не страшні — просто заважають.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORLDS -->
+<section id="worlds" class="worlds">
+  <div class="wrap">
+    <h2><span class="en">Ten chapters to explore</span><span class="uk">Десять глав для пригод</span></h2>
+    <p class="sub"><span class="en">From the home farm all the way to the Boar King's castle.</span><span class="uk">Від рідної ферми аж до замку Кабанячого короля.</span></p>
+  </div>
+  <div class="strip">
+    <figure><img src="assets/world_yard.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Home Farm</span><span class="uk">Рідна ферма</span></figcaption></figure>
+    <figure><img src="assets/world_pumpkin.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Pumpkin Patch</span><span class="uk">Гарбузова грядка</span></figcaption></figure>
+    <figure><img src="assets/world_orchard.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Apple Orchard</span><span class="uk">Яблуневий сад</span></figcaption></figure>
+    <figure><img src="assets/world_river.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Mill River</span><span class="uk">Млинова річка</span></figcaption></figure>
+    <figure><img src="assets/world_steppe.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Wheat Steppe</span><span class="uk">Пшеничний степ</span></figcaption></figure>
+    <figure><img src="assets/world_swamp.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Misty Marsh</span><span class="uk">Туманне болото</span></figcaption></figure>
+    <figure><img src="assets/world_snow.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Snowy Hamlet</span><span class="uk">Сніжний хутір</span></figcaption></figure>
+    <figure><img src="assets/world_apiary.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Honey Apiary</span><span class="uk">Медова пасіка</span></figcaption></figure>
+    <figure><img src="assets/world_quarry.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Stone Quarry</span><span class="uk">Кам’яний кар’єр</span></figcaption></figure>
+    <figure><img src="assets/world_castle.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Boar King's Castle</span><span class="uk">Замок Кабанячого короля</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="wrap">
+    <h2><span class="en">What we care about</span><span class="uk">Що для нас важливо</span></h2>
+    <div class="value-grid">
+      <article class="vcard"><div class="badge b-gold">★</div>
+        <h3><span class="en">Fun first</span><span class="uk">Насамперед — радість</span></h3>
+        <p><span class="en">Short, bright sessions that are easy to start and hard to put down.</span><span class="uk">Короткі яскраві сесії: легко почати, важко відірватися.</span></p></article>
+      <article class="vcard"><div class="badge b-mint">✓</div>
+        <h3><span class="en">Fair play</span><span class="uk">Чесна гра</span></h3>
+        <p><span class="en">Ads are optional and always give a reward. You can remove them any time.</span><span class="uk">Реклама необов’язкова і завжди дає нагороду. Її можна вимкнути будь-коли.</span></p></article>
+      <article class="vcard"><div class="badge b-pink">♥</div>
+        <h3><span class="en">Respect for players</span><span class="uk">Повага до гравців</span></h3>
+        <p><span class="en">No accounts, and your progress stays on your device. Read our <a href="privacy/">Privacy Policy</a>.</span><span class="uk">Жодних акаунтів, прогрес лишається на вашому пристрої. Див. <a href="privacy/#uk">Політику конфіденційності</a>.</span></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="team">
+  <div class="wrap">
+    <h2><span class="en">The team</span><span class="uk">Команда</span></h2>
+    <article class="member">
+      <div class="avatar"><img src="assets/herd.webp" alt="" width="120" height="120"></div>
+      <div>
+        <h3><span class="en">Oleksandr Matiashov</span><span class="uk">Олександр Матяшов</span></h3>
+        <p class="role"><span class="en">Founder · game designer · developer</span><span class="uk">Засновник · геймдизайнер · розробник</span></p>
+        <p><span class="en">Design, code, art direction, balancing and everything in between.</span><span class="uk">Дизайн, код, арт-дирекція, баланс і все, що між ними.</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="panel">
+      <img class="peek" src="assets/herd.webp" alt="" width="160" height="160" loading="lazy">
+      <h2><span class="en">Let’s talk!</span><span class="uk">Давайте поговоримо!</span></h2>
+      <p><span class="en">Feedback, bug reports, partnerships or press — we read every message.</span><span class="uk">Відгуки, баги, партнерство чи преса — ми читаємо кожен лист.</span></p>
+      <a class="btn btn-gold big" href="mailto:contact@oinkenginegames.com">contact@oinkenginegames.com</a>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div class="brand small"><img src="assets/herd.webp" alt="" width="32" height="32"><span>Oink Engine <b>Games</b></span></div>
+    <nav>
+      <a href="privacy/"><span class="en">Privacy Policy</span><span class="uk">Конфіденційність</span></a>
+      <a href="terms/"><span class="en">Terms of Service</span><span class="uk">Умови використання</span></a>
+      <a href="mailto:contact@oinkenginegames.com"><span class="en">Contact</span><span class="uk">Контакти</span></a>
+    </nav>
+    <p>© 2026 Oink Engine Games · <span class="en">FOP Oleksandr Matiashov, Ichnia, Ukraine</span><span class="uk">ФОП Матяшов Олександр, м. Ічня, Україна</span></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function set(l) {
+    root.setAttribute('data-lang', l); root.lang = l;
+    document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  var saved = null; try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var nav = (navigator.language || '').toLowerCase();
+  set(saved || (/^(uk|ru|be)/.test(nav) ? 'uk' : 'en'));
+  document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { set(b.dataset.set); }); });
+})();
+</script>
 </body>
 </html>
