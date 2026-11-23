@@ -3,13 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Oink Engine Games</title>
-<meta name="description" content="Oink Engine Games is an independent studio from Ukraine making cheerful mobile games. Our first game: Piglet Rally.">
+<title>Oink Engine Games — indie mobile game studio · Piglet Rally</title>
+<meta name="description" content="Oink Engine Games is an independent mobile game studio from Ukraine. Our first game, Piglet Rally, is a cheerful runner: lead a herd of brave piglets through gates, raid farms and beat grumpy boar bosses. Coming soon to Android and iOS.">
+<meta name="keywords" content="Oink Engine Games, Piglet Rally, Пятачки вперёд, indie game studio Ukraine, mobile game, piglet game, runner game, casual game Android iOS">
+<meta name="author" content="Oink Engine Games">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://oinkenginegames.com/">
 <meta name="theme-color" content="#17544A">
-<meta property="og:title" content="Oink Engine Games">
-<meta property="og:description" content="Cheerful mobile games about brave piglets. Meet Piglet Rally.">
-<meta property="og:image" content="https://oinkenginegames.com/assets/captain.webp">
-<link rel="icon" href="assets/herd.webp" type="image/webp">
+<meta name="color-scheme" content="light">
+
+<!-- Icons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Oink Engine Games">
+<meta property="og:url" content="https://oinkenginegames.com/">
+<meta property="og:title" content="Oink Engine Games — Brave piglets. Big adventures.">
+<meta property="og:description" content="Indie mobile game studio from Ukraine. Meet Piglet Rally — lead a herd of brave piglets through farm raids. Coming soon to Android &amp; iOS.">
+<meta property="og:image" content="https://oinkenginegames.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Piglet Rally app icon: a pink piglet in aviator goggles, next to the text Brave piglets. Big adventures.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="uk_UA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Oink Engine Games — Brave piglets. Big adventures.">
+<meta name="twitter:description" content="Indie mobile game studio from Ukraine. Meet Piglet Rally, coming soon to Android &amp; iOS.">
+<meta name="twitter:image" content="https://oinkenginegames.com/assets/og-image.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://oinkenginegames.com/#org",
+      "name": "Oink Engine Games",
+      "url": "https://oinkenginegames.com/",
+      "logo": "https://oinkenginegames.com/assets/icon-512.png",
+      "email": "contact@oinkenginegames.com",
+      "founder": { "@type": "Person", "name": "Oleksandr Matiashov" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Ichnia", "addressRegion": "Chernihiv Oblast", "postalCode": "16700", "addressCountry": "UA" },
+      "contactPoint": { "@type": "ContactPoint", "email": "contact@oinkenginegames.com", "contactType": "customer support", "availableLanguage": ["English", "Ukrainian", "Russian"] }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://oinkenginegames.com/#website",
+      "url": "https://oinkenginegames.com/",
+      "name": "Oink Engine Games",
+      "inLanguage": ["en", "uk"],
+      "publisher": { "@id": "https://oinkenginegames.com/#org" }
+    },
+    {
+      "@type": "VideoGame",
+      "name": "Piglet Rally",
+      "alternateName": "Пятачки, вперёд!",
+      "description": "A cheerful mobile runner: lead a herd of brave piglets through gates, raid farms, open chests and beat grumpy boar bosses across ten chapters.",
+      "image": "https://oinkenginegames.com/assets/icon-512.png",
+      "screenshot": ["https://oinkenginegames.com/assets/screen_raid.webp", "https://oinkenginegames.com/assets/screen_farm.webp"],
+      "genre": ["Casual", "Runner", "Arcade"],
+      "gamePlatform": ["Android", "iOS"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Android, iOS",
+      "author": { "@id": "https://oinkenginegames.com/#org" },
+      "publisher": { "@id": "https://oinkenginegames.com/#org" }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
@@ -53,7 +120,7 @@
     </div>
     <div class="hero-art">
       <div class="sun" aria-hidden="true"></div>
-      <img class="captain" src="assets/captain.webp" alt="Captain piglet in goggles jumping" width="640" height="640">
+      <img class="captain" fetchpriority="high" src="assets/captain.webp" alt="Captain piglet in goggles jumping" width="640" height="640">
       <img class="float corn c1" src="assets/corn.webp" alt="" aria-hidden="true">
       <img class="float corn c2" src="assets/corn.webp" alt="" aria-hidden="true">
       <img class="float chest" src="assets/chest.webp" alt="" aria-hidden="true">
@@ -125,16 +192,16 @@
     <p class="sub"><span class="en">From the home farm all the way to the Boar King's castle.</span><span class="uk">Від рідної ферми аж до замку Кабанячого короля.</span></p>
   </div>
   <div class="strip">
-    <figure><img src="assets/world_yard.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Home Farm</span><span class="uk">Рідна ферма</span></figcaption></figure>
-    <figure><img src="assets/world_pumpkin.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Pumpkin Patch</span><span class="uk">Гарбузова грядка</span></figcaption></figure>
-    <figure><img src="assets/world_orchard.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Apple Orchard</span><span class="uk">Яблуневий сад</span></figcaption></figure>
-    <figure><img src="assets/world_river.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Mill River</span><span class="uk">Млинова річка</span></figcaption></figure>
-    <figure><img src="assets/world_steppe.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Wheat Steppe</span><span class="uk">Пшеничний степ</span></figcaption></figure>
-    <figure><img src="assets/world_swamp.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Misty Marsh</span><span class="uk">Туманне болото</span></figcaption></figure>
-    <figure><img src="assets/world_snow.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Snowy Hamlet</span><span class="uk">Сніжний хутір</span></figcaption></figure>
-    <figure><img src="assets/world_apiary.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Honey Apiary</span><span class="uk">Медова пасіка</span></figcaption></figure>
-    <figure><img src="assets/world_quarry.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Stone Quarry</span><span class="uk">Кам’яний кар’єр</span></figcaption></figure>
-    <figure><img src="assets/world_castle.webp" alt="" loading="lazy" width="480" height="360"><figcaption><span class="en">Boar King's Castle</span><span class="uk">Замок Кабанячого короля</span></figcaption></figure>
+    <figure><img src="assets/world_yard.webp" alt="Piglet Rally chapter: Home Farm" loading="lazy" width="480" height="360"><figcaption><span class="en">Home Farm</span><span class="uk">Рідна ферма</span></figcaption></figure>
+    <figure><img src="assets/world_pumpkin.webp" alt="Piglet Rally chapter: Pumpkin Patch" loading="lazy" width="480" height="360"><figcaption><span class="en">Pumpkin Patch</span><span class="uk">Гарбузова грядка</span></figcaption></figure>
+    <figure><img src="assets/world_orchard.webp" alt="Piglet Rally chapter: Apple Orchard" loading="lazy" width="480" height="360"><figcaption><span class="en">Apple Orchard</span><span class="uk">Яблуневий сад</span></figcaption></figure>
+    <figure><img src="assets/world_river.webp" alt="Piglet Rally chapter: Mill River" loading="lazy" width="480" height="360"><figcaption><span class="en">Mill River</span><span class="uk">Млинова річка</span></figcaption></figure>
+    <figure><img src="assets/world_steppe.webp" alt="Piglet Rally chapter: Wheat Steppe" loading="lazy" width="480" height="360"><figcaption><span class="en">Wheat Steppe</span><span class="uk">Пшеничний степ</span></figcaption></figure>
+    <figure><img src="assets/world_swamp.webp" alt="Piglet Rally chapter: Misty Marsh" loading="lazy" width="480" height="360"><figcaption><span class="en">Misty Marsh</span><span class="uk">Туманне болото</span></figcaption></figure>
+    <figure><img src="assets/world_snow.webp" alt="Piglet Rally chapter: Snowy Hamlet" loading="lazy" width="480" height="360"><figcaption><span class="en">Snowy Hamlet</span><span class="uk">Сніжний хутір</span></figcaption></figure>
+    <figure><img src="assets/world_apiary.webp" alt="Piglet Rally chapter: Honey Apiary" loading="lazy" width="480" height="360"><figcaption><span class="en">Honey Apiary</span><span class="uk">Медова пасіка</span></figcaption></figure>
+    <figure><img src="assets/world_quarry.webp" alt="Piglet Rally chapter: Stone Quarry" loading="lazy" width="480" height="360"><figcaption><span class="en">Stone Quarry</span><span class="uk">Кам’яний кар’єр</span></figcaption></figure>
+    <figure><img src="assets/world_castle.webp" alt="Piglet Rally chapter: Boar King's Castle" loading="lazy" width="480" height="360"><figcaption><span class="en">Boar King's Castle</span><span class="uk">Замок Кабанячого короля</span></figcaption></figure>
   </div>
 </section>
 
